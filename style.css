@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:wght@100;300;400&display=swap');
 
 :root {
     --main-bg-color: #FFFDF5;
@@ -32,6 +32,10 @@ body {
     font-weight: 300;
 }
 
+h2 {
+    font-weight: 300;
+}
+
 .wrapper {
     width: 80%;
     max-width: 1500px;
@@ -52,6 +56,8 @@ input[type=text] {
     border-bottom: 1px solid var(--grey-text-color);
     background-color: transparent;
     color: var(--grey-text-color);
+    font-weight: 100;
+    font-size: var(--extra-small-font);
     padding-bottom: 4px;
 }
 
@@ -140,8 +146,12 @@ header > div {
     box-shadow: 0px 0px 25px var(--accent-color);
 }
 
-.main-botton:hover > svg > path {
-    fill: var(--white-text-color);
+svg path {
+    transition: all .5s ease-out;
+}
+
+button:hover svg path {
+    fill: #FFFDF5;
 }
 
 /* why us */
@@ -306,16 +316,16 @@ h2 {
     padding-right: 23px;
 }
 
-/* .price .old::before {
+.price .old::after {
     content: '';
     position: absolute;
     display: block;
     height: 1px;
-    width: 100%;
+    width: 140%;
     top: 50%;
-    bottom: 50%;
+    left: -20%;
     background-color: var(--grey-text-color);
-} */
+}
 
 .card-buttons img {
     width: 18px;
@@ -555,4 +565,69 @@ h2 {
 
 .pros img {
     margin-bottom: 17px;
+}
+
+/* form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 714px;
+    padding: 34px 51px;
+    background-color: var(--white-text-color);
+}
+
+.form-bg {
+    background-color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+    width: 970px;
+    margin-bottom: 150px;
+}
+
+.form legend {
+    font-weight: 400;
+    font-size: var(--meduim-font);
+    margin-bottom: 40px;
+    color: var(--black-text-color);
+}
+
+.form .field:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.form label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: var(--extra-small-font);
+    color: var(--grey-text-color);
+}
+
+form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 41px;
+    width: 148px;
+    height: 37px;
+    border: none;
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+}
+
+/* footer */
+footer {
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+    padding-top: 82px;
+    padding-bottom: 86px;
+}
+
+.footer {
+    display: flex;
+    justify-content: start;
+    gap: 97px;
 }
