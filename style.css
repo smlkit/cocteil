@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:wght@300;400&display=swap');
 
 :root {
     --main-bg-color: #FFFDF5;
@@ -29,6 +29,7 @@ body {
     font-family: var(--main-font);
     width: 100vw;
     overflow-x: hidden;
+    font-weight: 300;
 }
 
 .wrapper {
@@ -442,6 +443,7 @@ h2 {
 /* faq */
 .faq {
     position: relative;
+    margin-bottom: 150px;
 }
 
 .faq h2 {
@@ -452,6 +454,59 @@ h2 {
     position: absolute;
     top: 20px;
     left: 540px;
+}
+
+.faq .label {
+    position: relative;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: var(--meduim-font);
+    margin-bottom: 15px;
+}
+
+.faq .label::after {
+    content: '+';
+    position: absolute;
+    top: 15%;
+    right: 0;
+    display: inline-block;
+    color: var(--accent-color);
+    font-weight: 300;
+    font-size: var(--meduim-font);
+    transition: all .5s;
+}
+
+.faq .content {
+    color: var(--grey-text-color);
+    height: 0;
+    overflow: hidden;
+    font-size: var(--small-font);
+    transition: 0.5s;
+}
+
+.accordion .container.active .content {
+    height: 50px;
+}
+
+.accordion .container.active hr {
+    background-color: transparent;
+}
+
+.accordion .container.active .label::after {
+    transform: rotate(45deg);
+}
+
+.faq hr {
+    margin-top: 17px;
+    margin-bottom: 27px;
+    border: none;
+    height: 1px;
+    background-color: var(--grey-text-color);
+    transition: all .1s ease-in;
+}
+
+.faq-circle {
+    top: -270px;
 }
 
 /* partnership */
