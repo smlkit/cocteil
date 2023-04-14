@@ -101,8 +101,8 @@
                             </div>
         
                             <div class="card-buttons">
-                                <img src="images/ui/heart.svg" alt="">
-                                <img src="images/ui/shopping-bag.svg" alt="">
+                                <img class="favorite" src="images/ui/heart.svg" alt="">
+                                <img class="bag" src="images/ui/shopping-bag.svg" alt="">
                             </div>
                         </div>
         
@@ -128,8 +128,8 @@
                             </div>
         
                             <div class="card-buttons">
-                                <img src="images/ui/heart.svg" alt="">
-                                <img src="images/ui/shopping-bag.svg" alt="">
+                                <img class="favorite" src="images/ui/heart.svg" alt="">
+                                <img class="bag" src="images/ui/shopping-bag.svg" alt="">
                             </div>
                         </div>
         
@@ -155,8 +155,8 @@
                             </div>
         
                             <div class="card-buttons">
-                                <img src="images/ui/heart.svg" alt="">
-                                <img src="images/ui/shopping-bag.svg" alt="">
+                                <img class="favorite" src="images/ui/heart.svg" alt="">
+                                <img class="bag" src="images/ui/shopping-bag.svg" alt="">
                             </div>
                         </div>
         
@@ -170,7 +170,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="images/photos/card-2.png" alt="">
+                        <img src="images/photos/card-1.png" alt="">
         
                         <div class="flex">
                             <div class="card-info">
@@ -182,8 +182,8 @@
                             </div>
         
                             <div class="card-buttons">
-                                <img src="images/ui/heart.svg" alt="">
-                                <img src="images/ui/shopping-bag.svg" alt="">
+                                <img class="favorite" src="images/ui/heart.svg" alt="">
+                                <img class="bag" src="images/ui/shopping-bag.svg" alt="">
                             </div>
                         </div>
         
@@ -197,7 +197,8 @@
                     </div>
                 </div>
 
-            <button class="cards-btn"><img src="images/ui/cards-btn.svg" alt=""></button>
+            <button class="cards-btn cards-btn-pc"><img src="images/ui/cards-btn.svg" alt=""></button>
+            <button class="cards-btn-mobile">Смотреть еще <img src="images/ui/form-arrow.svg" alt=""></button>
         </div>
     </article>
 
@@ -222,7 +223,7 @@
                     <img class="avatar" src="images/photos/avatar-2.png" alt="">
                     <div class="review-content flex">
                         <img class="review-rating" src="images/ui/rating.svg" alt="">
-                        <p>Заказываю постоянно одежду в этом магазине! Хорошие цены, хорошее качество! Приятные менеджеры! Все быстро, доступно, удобно! Спасибо.</p>
+                        <p>Платье село отлично! Хороший материал. Буду заказывать еще, осталась очень довольна.</p>
                         <div class="review-card-info">
                             <span class="name">Анна Котлова</span>
                             <span class="date">23.05.2021</span>
@@ -236,6 +237,7 @@
             </div>
 
             <button class="reviews-button">Добавить отзыв</button>
+            <img class="dots-mobile" src="images/ui/dots.svg" alt="">
         </div>
     </article>
 
@@ -323,7 +325,7 @@
 
             <h3>Это выгодно. Какие преимущества?</h3>
 
-            <div class="flex">
+            <div class="flex pros-container">
                 <div class="flex pros">
                     <img src="images/ui/settings.svg" alt="">
                     <p>Автоматизация процессов</p>
@@ -369,7 +371,7 @@
         <div class="wrapper footer">
             <figure>
                 <figcaption>Информация</figcaption>
-                <ul>
+                <ul class="dropdown">
                     <li>Главная</li>
                     <li>Акции</li>
                     <li>Каталог</li>
@@ -383,7 +385,7 @@
             
             <figure>
                 <figcaption>Мой кабинет</figcaption>
-                <ul>
+                <ul class="dropdown">
                     <li>Мои заказы</li>
                     <li>Мои адреса</li>
                     <li>Мои скидки</li>
@@ -393,7 +395,7 @@
 
             <figure class="contact-info">
                 <figcaption>Контактная информация</figcaption>
-                <ul>
+                <ul class="dropdown">
                     <li>ИП Вишневский Иван Сергеевич
                         государственная регистрация №690867884 от 31.07.2020.<br>
                         Логойским горисполкомом<br>

@@ -36,6 +36,10 @@ h2 {
     font-weight: 300;
 }
 
+h3 {
+    font-weight: 300;
+}
+
 .wrapper {
     width: 80%;
     max-width: 1500px;
@@ -373,9 +377,14 @@ h2 {
     box-shadow: 0px 0px 10px var(--accent-color);
 }
 
+.cards-btn-mobile {
+    display: none;
+}
+
 /* reviews */
 .reviews {
     margin-bottom: 150px;
+    overflow: hidden;
 }
 
 .reviews-container {
@@ -393,7 +402,7 @@ h2 {
     justify-content: center;
     border-radius: 5px;
     padding: 40px 24px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 }
 
 .review-card .avatar {
@@ -452,6 +461,10 @@ h2 {
     font-family: var(--main-font);
 }
 
+.dots-mobile {
+    display: none;
+}
+
 /* faq */
 .faq {
     position: relative;
@@ -471,7 +484,7 @@ h2 {
 .faq .label {
     position: relative;
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 300;
     font-size: var(--meduim-font);
     margin-bottom: 15px;
 }
@@ -483,8 +496,8 @@ h2 {
     right: 0;
     display: inline-block;
     color: var(--accent-color);
-    font-weight: 300;
-    font-size: var(--meduim-font);
+    font-weight: 100;
+    font-size: 30px;
     transition: all .5s;
 }
 
@@ -543,6 +556,7 @@ h2 {
 .partnership-card h4 {
     font-size: var(--meduim-font);
     margin-bottom: 22px;
+    font-weight: 300;
 }
 
 .partnership-card p {
@@ -686,4 +700,225 @@ footer .logo {
     height: 84px;
     bottom: 12%;
     right: 10%;
+}
+
+/* mobile */
+@media (max-width: 415px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .dot {
+        display: none;
+    }
+
+    /* header */
+    
+    .header-img-2 {
+        display: none;
+    }
+
+    /* why-us */
+
+
+    /* deals */
+    .deals {
+        margin-bottom: 100px;
+    }
+
+    .deals .wrapper {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .cards-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .card {
+        position: relative;
+        width: 43%;
+    }
+
+    .card > img {
+        border-radius: 25px;
+    }
+
+    .card button {
+        display: none;
+    }
+
+    .card-info p {
+        font-size: var(--extra-small-font);
+    }
+
+    .card .card-buttons .favorite {
+        position: absolute;
+        top: 3%;
+        right: 1%;
+    }
+
+    .card .card-buttons .bag {
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+    }
+
+    .cards-btn-pc {
+        display: none;
+    }
+
+    .cards-btn-mobile {
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        background-color: var(--accent-color);
+        width: 158px;
+        height: 37px;
+        color: var(--white-text-color);
+        box-shadow: 0 0 5px var(--accent-color);
+    }
+
+    /* reviews */
+    .reviews {
+        margin-bottom: 90px;
+    }
+
+    .reviews-container {
+        gap: 15px;
+    }
+
+    .review-card {
+        gap: 10px;
+        padding: 15px 15px;
+        width: 300px;
+    }
+
+    .reviews .review-card .review-card-info {
+        margin-bottom: 0;
+    }
+
+    .reviews .name {
+        margin-bottom: 0;
+    }
+
+    .reviews .date {
+        margin-bottom: 0;
+    }
+
+    .reviews-next {
+        display: none;
+    }
+
+    .reviews-button {
+        display: none;
+    }
+
+    .dots-mobile {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* faq */
+    .faq {
+        margin-bottom: 100px;
+    }
+
+    .faq .accent-text {
+        left: 300px;
+    }
+
+    .accordion .container.active .content {
+        height: 115px;
+    }
+
+    /* partnership */
+    .partnership {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .partnership-container {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .partnership-card {
+        width: 165px;
+        height: 78px;
+        background-color: var(--accent-color);
+        color: var(--white-text-color);
+        border-radius: 10px;
+        padding: 30px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 5px var(--accent-color);
+    }
+
+    .partnership-card h4 {
+        font-weight: 100;
+        font-size: var(--extra-small-font);
+        margin-bottom: 0;
+    }
+
+    .partnership-card p {
+        display: none;
+    }
+
+    .pros-container {
+        flex-direction: column;
+    }
+
+    .pros p {
+        margin-bottom: 35px;
+    }
+
+    /* form */
+    .form-bg {
+        display: static;
+        width: 100%;
+        height: 550px;
+        margin-bottom: 5px;
+    }
+
+    form {
+        width: 100%;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    form legend {
+        font-size: 12px;
+    }
+
+    form button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(1.3);
+    }
+
+    /* footer */
+    .footer {
+        flex-direction: column;
+    }
+
+    figure .dropdown {
+        display: none;
+    }
 }
