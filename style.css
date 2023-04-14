@@ -620,6 +620,7 @@ form button {
 
 /* footer */
 footer {
+    position: relative;
     background-color: var(--accent-color);
     color: var(--white-text-color);
     padding-top: 82px;
@@ -630,4 +631,57 @@ footer {
     display: flex;
     justify-content: start;
     gap: 97px;
+}
+
+.footer figure {
+    max-width: 30%;
+}
+
+.footer figcaption {
+    font-size: var(--meduim-font);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    font-size: var(--small-font);
+}
+
+.footer ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.contact-info li {
+    font-weight: 100;
+}
+
+.footer .flex.social-icons {
+    gap: 15px;
+}
+
+.footer ul.socials li {
+    margin-bottom: 30px;
+}
+
+footer .circle {
+    top: -400px;
+}
+
+footer .dot {
+    position: absolute;
+    top: -500px;
+    right: -100px;
+    width: 200px;
+    height: 200px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+footer .logo {
+    position: absolute;
+    width: 84px;
+    height: 84px;
+    bottom: 12%;
+    right: 10%;
 }
