@@ -723,9 +723,57 @@ footer .logo {
     }
 
     /* header */
-    
+    .header-bg {
+        background-image: url(images/photos/mobile-bg.png);
+        height: 100vh;
+        margin-bottom: 50px;
+    }
+
+    .navbar-group {
+        width: 100%;
+    }
+
+    .navbar .searchbar {
+        background-color: var(--white-text-color);
+        padding: 10px 10px;
+        border-radius: 8px;
+        width: 100%;
+        display: block;
+    }
+
+    .navbar img {
+        display: none;
+    }
+
+    .header-img-1 {
+        display: none;
+    }
+
     .header-img-2 {
         display: none;
+    }
+
+    header {
+        text-align: center;
+        color: var(--white-text-color);
+    }
+
+    header .title .accent-text {
+        color: var(--white-text-color);
+    }
+
+    header .subtitle {
+        color: var(--white-text-color);
+        margin-bottom: 30px;
+    }
+
+    .main-button {
+        color: var(--white-text-color);
+        background-color: var(--accent-color);
+    }
+
+    .main-button svg path {
+        fill: var(--white-text-color);
     }
 
     /* why-us */
