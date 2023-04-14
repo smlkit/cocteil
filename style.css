@@ -261,10 +261,12 @@ h2 {
 /* deals */
 .deals {
     margin-bottom: 150px;
+    position: relative;
 }
 
 .deals .wrapper {
-    position: relative;
+    width: 100%;
+    margin-left: 10%;
 }
 
 .deals h2 {
@@ -362,8 +364,8 @@ h2 {
 
 .cards-btn {
     position: absolute;
-    bottom: 125px;
-    right: -13%;
+    bottom: 120px;
+    right: 0;
     background-color: var(--main-bg-color);
     width: 95px;
     height: 47px;
