@@ -395,42 +395,44 @@
         </div>
     </article>
 
-    <footer>
+    <footer class="pc-footer">
         <div class="wrapper footer">
-            <figure>
-                <figcaption>Информация</figcaption>
-                <ul class="dropdown">
-                    <li>Главная</li>
-                    <li>Акции</li>
-                    <li>Каталог</li>
-                    <li>Возврат</li>
-                    <li>Доставка</li>
-                    <li>Партнёрам</li>
-                    <li>Способы оплаты</li>
-                    <li>Как сделать заказ?</li>
-                </ul>
-            </figure>
-            
-            <figure>
-                <figcaption>Мой кабинет</figcaption>
-                <ul class="dropdown">
-                    <li>Мои заказы</li>
-                    <li>Мои адреса</li>
-                    <li>Мои скидки</li>
-                    <li>Моя информация</li>
-                </ul>
-            </figure>
+            <div class="flex">
+                <figure>
+                    <figcaption>Информация</figcaption>
+                    <ul class="dropdown">
+                        <li>Главная</li>
+                        <li>Акции</li>
+                        <li>Каталог</li>
+                        <li>Возврат</li>
+                        <li>Доставка</li>
+                        <li>Партнёрам</li>
+                        <li>Способы оплаты</li>
+                        <li>Как сделать заказ?</li>
+                    </ul>
+                </figure>
+                
+                <figure>
+                    <figcaption>Мой кабинет</figcaption>
+                    <ul class="dropdown">
+                        <li>Мои заказы</li>
+                        <li>Мои адреса</li>
+                        <li>Мои скидки</li>
+                        <li>Моя информация</li>
+                    </ul>
+                </figure>
 
-            <figure class="contact-info">
-                <figcaption>Контактная информация</figcaption>
-                <ul class="dropdown">
-                    <li>ИП Вишневский Иван Сергеевич
-                        государственная регистрация №690867884 от 31.07.2020.<br>
-                        Логойским горисполкомом<br>
-                        Защита прав потребителей +375259990755
-                    </li>
-                </ul>
-            </figure>
+                <figure class="contact-info">
+                    <figcaption>Контактная информация</figcaption>
+                    <ul class="dropdown">
+                        <li>ИП Вишневский Иван Сергеевич
+                            государственная регистрация №690867884 от 31.07.2020.<br>
+                            Логойским горисполкомом<br>
+                            Защита прав потребителей +375259990755
+                        </li>
+                    </ul>
+                </figure>
+            </div>
 
             <figure>
                 <figcaption>Соц. сети</figcaption>
@@ -442,21 +444,71 @@
                         <img src="images/ui/viber.svg" alt="">
                     </li>
                     <li>
-                        <img src="images/ui/call.svg" alt="">
+                        <img class="pc-img" src="images/ui/call.svg" alt="">
                         +375255990755
                     </li>
                     <li>
-                        <img src="images/ui/time.svg" alt="">
+                        <img class="pc-img" src="images/ui/time.svg" alt="">
                         круглосуточно, без выходных
                     </li>
                 </ul>
             </figure>
-
-            <img class="logo" src="images/ui/logo.png" alt="">
         </div>
+
+        <img class="logo" src="images/ui/logo.png" alt="">
 
         <div class="dot"></div>
         <div class="circle footer-circle"></div>
+    </footer>
+
+    <footer class="mobile-footer">
+        <div class="wrapper">
+            <div class="flex">
+                <div class="left flex">
+                    <p class="flex">
+                        Информация
+                        <img src="images/ui/mobile-down.svg" alt="">
+                    </p>
+                    <hr>
+
+                    <p class="flex">
+                        Мой кабинет
+                        <img src="images/ui/mobile-down.svg" alt="">
+                    </p>
+                    <hr>
+                    
+                    <p class="flex">
+                        Сотрудничество
+                        <img src="images/ui/mobile-down.svg" alt="">
+                    </p>
+                    <hr>
+
+                    <p class="flex">
+                        Контакты
+                        <img src="images/ui/mobile-down.svg" alt="">
+                    </p>
+                    <hr>
+                </div>
+
+                <div class="right flex">
+                    <p>Мы в соц. сетях</p>
+                    <div class="flex">
+                        <img src="images/ui/messages.svg" alt="">
+                        <img src="images/ui/call.svg" alt="">
+                        <img src="images/ui/telegram.svg" alt="">
+                        <img src="images/ui/viber.svg" alt="">
+                    </div>
+                    <p>+375255990755</p>
+                    <p>круглосуточно, без выходных</p>
+                </div>
+
+            </div>
+
+            <img class="logo" src="images/ui/logo.png" alt="">
+            <button class="mobile-up">
+                <img src="images/ui/up-accent.svg" alt="">
+            </button>
+        </div>
     </footer>
 
     <script src="main.js"></script>

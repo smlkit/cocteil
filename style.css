@@ -651,7 +651,11 @@ form button {
 }
 
 /* footer */
-footer {
+.mobile-footer {
+    display: none;
+}
+
+.pc-footer {
     position: relative;
     background-color: var(--accent-color);
     color: var(--white-text-color);
@@ -663,6 +667,10 @@ footer {
     display: flex;
     justify-content: start;
     gap: 97px;
+}
+
+.footer .flex {
+    justify-content: space-between;
 }
 
 .footer figure {
@@ -696,11 +704,11 @@ footer {
     margin-bottom: 30px;
 }
 
-footer .circle {
+.pc-footer .circle {
     top: -400px;
 }
 
-footer .dot {
+.pc-footer .dot {
     position: absolute;
     top: -500px;
     right: -100px;
@@ -710,7 +718,7 @@ footer .dot {
     border-radius: 50%;
 }
 
-footer .logo {
+.pc-footer .logo {
     position: absolute;
     width: 84px;
     height: 84px;
@@ -1104,29 +1112,66 @@ footer .logo {
     }
 
     /* footer */
-    footer {
-        padding-top: 100px;
-        font-weight: 100;
-        font-size: var(--extra-small-font);
-    }
-
-    .footer {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .footer figure figcaption {
-        white-space: nowrap;
-        font-weight: 100;
-        font-size: var(--extra-small-fontmall-font);
-    }
-
-    figure .dropdown {
+    .pc-footer {
         display: none;
     }
 
-    .logo {
+    .mobile-footer {
+        position: relative;
+        display: block;
+        padding: 90px 0 200px 0;
+        background-color: var(--accent-color);
+        color: var(--white-text-color);
+    }
+
+    .mobile-footer .wrapper > .flex {
+        gap: 45px;
+    }
+
+    .mobile-footer .left {
+        width: 60%;
+    }
+
+    .mobile-footer .left p {
+        padding-bottom: 5px;
+        padding-top: 10px;
+        justify-content: space-between;
+    }
+
+    .mobile-footer .left img {
+        display: inline;
+        width: 15px;
+    }
+
+    .mobile-footer .left hr {
+        border: none;
+        height: 1px;
+        background-color: var(--white-text-color);
+    }
+
+    .mobile-footer .right.flex {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .left.flex {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .right.flex div {
+        gap: 15px;
+    }
+
+    .mobile-footer .logo {
+        position: absolute;
         top: 0;
         left: 0;
+        width: 80px;
+    }
+
+    .mobile-footer .mobile-up {
+        bottom: 140px;
+        background-color: var(--white-text-color);
     }
 }
